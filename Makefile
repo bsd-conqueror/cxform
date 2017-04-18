@@ -140,9 +140,12 @@ mac-main:
 linux-main: linux-cxform-c.so main.o
 	gcc ./cxform-c.so main.o -lm -o main
 
+main-cli: linux-cxform-c.so main-cli.o
+	gcc ./cxform-c.so main-cli.o -lm -o main-cli
+
 
 
 #######################
 clean:
-	rm -f *.so *.sl *.o *.obj *.a core a.out cxform.dll cxform-c.dll cxform.lib cxform.exp main main.exe tester.exe
+	rm -f *.so *.sl *.o *.obj *.a core a.out cxform.dll cxform-c.dll cxform.lib cxform.exp main main.exe tester.exe main-cli
 

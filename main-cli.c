@@ -44,9 +44,12 @@ int main(int argc, char** argv)
 	
 	
 
-	v_in[0] = -896921337.28302002;
-	v_in[1] = 220296912.43620300; 
-	v_in[2] =  44419205.01961136;  
+//	v_in[0] = -896921337.28302002;
+//	v_in[1] = 220296912.43620300; 
+//	v_in[2] =  44419205.01961136;  
+  v_in[0] = strtod(argv[7], NULL);
+  v_in[1] = strtod(argv[8], NULL);
+  v_in[2] = strtod(argv[9], NULL);
 
 	retVal = cxform(inSys, outSys0, es, v_in, v_out0);
 	retVal = cxform(inSys, outSys1, es, v_in, v_out1);
