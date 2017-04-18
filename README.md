@@ -16,7 +16,7 @@ ld -G -lm -o cxform-c.so cxform-auto.o cxform-manual.o
 make[1]: Leaving directory '/home/conqueror/cxform'
 ```
 
-## only after that compile the main-customized-dt
+## only after that compile the main-cli
 ```bash
 conqueror@dev01:~/cxform$ make main-cli
 ld -G -lm -o cxform-c.so cxform-auto.o cxform-manual.o
